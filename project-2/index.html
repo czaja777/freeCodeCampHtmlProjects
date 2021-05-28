@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="x-ua-compatible" content="image/vnd.fujixerox.edmics-mmr=edge">
+    <title>ericeiraTravel</title>
+    <link rel="stylesheet" href="resources/css/normalize.css">
+    <link rel="stylesheet" href="resources/css/index.css">
+</head>
+<body>
+<main id="main">
+    <h1 id="title">ericeiraTravel Survey Form</h1>
+    <p id="description">If you plan to visit Portugal, help us learn more about your travel expectations.  </p>
+
+    <form id="survey-form">
+        <div class="input">
+            <label id="name-label">Name:</label>
+            <input id="name" type="text" name="name" placeholder="enter your name" required>
+        </div>
+        <div class="input">
+            <label id="email-label">Email:</label>
+            <input id="email" type="email" name="email" placeholder="enter your email" required>
+        </div>
+        <div class="input">
+            <label id="number-label">Phone number:</label>
+            <input id="number" type="number" name="number" min="100000000" max="9999999999999" placeholder="enter your phone number" required>
+        </div>
+
+        <div class="input">
+            <label id="number-label">A trip oriented to:</label>
+            <select id="dropdown" name="trip-type">
+                <option value="sightseeing">sightseeing</option>
+                <option value="water">water sports</option>
+                <option value="activity">other sports activity</option>
+                <option value="sunbathing">sunbathing and family time</option>
+                <option value="nightlife">nightlife and new friendships</option>
+            </select>
+        </div>
+
+        <div class="input">
+            <label>Do you or your companion have any mobility limitations?</label>
+            <label for="no" class="font-normalize">
+              <input id="no" value="no" type="radio" name="mobility">No
+            </label>
+            <label for="yes" class="font-normalize">
+              <input id="yes" value="yes" type="radio" name="mobility">Yes
+            </label>
+        </div>
+
+        <div class="input">
+            <label>Additional amenities for:</label>
+            <label for="kids" class="font-normalize">
+                <input id="kids" value="kids" type="checkbox" name="companions">Kids
+            </label>
+            <label for="pets" class="font-normalize">
+                <input id="pets" value="pets" type="checkbox" name="companions">Pets
+            </label>
+            <label for="smokers" class="font-normalize">
+                <input id="smokers" value="smokers" type="checkbox" name="companions">Smokers
+            </label>
+        </div>
+
+        <div class="input">
+            <label>Additional comments:</label>
+            <textarea></textarea>
+        </div>
+
+        <div class="button">
+            <button type="submit" id="submit">Submit</button>
+        </div>
+    </form>
+
+</main>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
