@@ -1,0 +1,10 @@
+header {
+  color: red;
+}
+
+code {
+  display: block;
+  background-color: darkgray;
+  padding: 20px;
+  margin: 20px;
+}
