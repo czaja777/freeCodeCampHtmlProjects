@@ -68,9 +68,16 @@ main {
   margin-left: -20px;
 }
 
+article, code {
+  color: #4d4e53;
+}
+
 code {
   display: block;
   background-color: darkgray;
+  border: solid #cdcaca;
+  border-radius: 5px;
   padding: 20px;
   margin: 20px;
+  text-align: center;
 }
