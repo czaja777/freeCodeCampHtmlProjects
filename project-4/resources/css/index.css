@@ -1,5 +1,71 @@
-header {
-  color: red;
+body {
+  height: 100vw;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  min-width: 290px;
+  height: 100%;
+  border-right: solid grey;
+}
+
+#sidebar h1 {
+  margin-left: 20px;
+}
+
+.menu {
+  padding-inline-start: 0;
+}
+
+.menu li {
+  max-width: 100%;
+  list-style: none;
+  border-top: solid 1px darkgray;
+  padding: 10px 30px;
+}
+
+.menu a {
+  color: #4d4e53;
+  text-decoration: none;
+}
+
+main {
+  margin-left: 330px;
+}
+
+@media only screen and (max-width: 800px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav {
+    flex: 1;
+    width: 100%;
+    height: auto;
+    border-right: none;
+    border-bottom: solid 1px;
+    text-align: center;
+    background-color: white;
+  }
+
+  .menu li {
+    float: left;
+    max-width: fit-content;
+    border-top: none;
+    padding: 5px;
+  }
+
+  main {
+    flex: 1;
+    margin: auto 20px 0px 40px;
+    max-width: 100%;
+  }
+}
+
+.subtitle {
+  margin-left: -20px;
 }
 
 code {
