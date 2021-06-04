@@ -10,8 +10,8 @@ nav {
   border-right: solid grey;
 }
 
-#sidebar h1 {
-  margin-left: 20px;
+nav h1 {
+  margin: 30px;
 }
 
 .menu {
@@ -28,20 +28,16 @@ nav {
 .menu a {
   color: #4d4e53;
   text-decoration: none;
+  display: block;
 }
 
 main {
   margin-left: 330px;
+  margin-right: 20px;
 }
 
 @media only screen and (max-width: 800px) {
-  body {
-    display: flex;
-    flex-direction: column;
-  }
-
   nav {
-    flex: 1;
     width: 100%;
     height: auto;
     border-right: none;
@@ -50,17 +46,27 @@ main {
     background-color: white;
   }
 
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
   .menu li {
-    float: left;
-    max-width: fit-content;
     border-top: none;
     padding: 5px;
   }
 
   main {
-    flex: 1;
-    margin: auto 20px 0px 40px;
+    margin: 180px 20px 0px 40px;
     max-width: 100%;
+
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  main {
+    margin-top: 210px;
   }
 }
 
