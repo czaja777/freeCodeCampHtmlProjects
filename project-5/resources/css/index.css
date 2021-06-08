@@ -7,7 +7,7 @@ body {
     align-items: center;
 }
 
-nav {
+#navbar {
     flex: 1;
     margin: 20px;
     text-align: center;
@@ -25,12 +25,13 @@ nav {
     display: inline-block;
     margin: 0 10px;
 }
+
 .nav-link:last-child:after {
     content: "";
     display: none;
 }
 
-main {
+.content {
     display: flex;
     flex-direction: column;
     flex: 1;
@@ -42,8 +43,8 @@ main {
     max-width: 70vw;
 }
 
-main h1 {
-    align-self: center;
+.content h1, .content h3 {
+    text-align: center;
     color: darkgreen;
 }
 
