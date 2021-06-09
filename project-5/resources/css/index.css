@@ -5,6 +5,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: #404044;
 }
 
 #navbar {
@@ -17,6 +18,7 @@ body {
     body {
         padding: 0;
     }
+
     #navbar {
         position: sticky;
         top: 0;
@@ -71,22 +73,30 @@ body {
 
 .section {
     margin: 0 20px;
-    /*text-align: center;*/
 }
 
 @media only screen and (min-width: 800px) {
+    .section {
+        margin: 0;
+    }
+
     #welcome-section {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         width: 100%;
-        height: 100vh;
+        height: 90vh;
+    }
+
+    #welcome-section p {
+        padding: 60px 60px;
+        text-align: center;
+        font-size: large;
     }
 }
 
 .projects-list {
-    /*text-align: start;*/
     list-style-type: none;
     padding-left: 0;
 }
@@ -103,7 +113,7 @@ body {
 }
 
 .projects-list a {
-    color: black;
+    color: #404044;
 }
 
 .contact-github:before {
@@ -111,6 +121,29 @@ body {
     position: relative;
     top: 4px;
     margin: 0 10px 10px 0;
+}
+
+@media only screen and (min-width: 800px) {
+    #contact {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #contact .projects-list {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .contact-github {
+        padding-right: 60px;
+    }
+
+    #other, #projects {
+        margin: 0 40px;
+        /*text-align: center;*/
+    }
 }
 
 .contact-github {
